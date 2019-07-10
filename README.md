@@ -26,10 +26,29 @@ source zocalo_venv/bin/activate
 Now install the package directly from Github:
 
 ```bash
-pip install -e git://github.com/DiamondLightSource/python-zocalo-examples.git#egg=zocalo_examples
+pip install -e git+git://github.com/DiamondLightSource/python-zocalo-examples.git#egg=python_zocalo_examples
 ```
 
 Running the `pip list` command should now show your installed packages, including zocalo_examples.
+
+Running `zocalo.service --help` will provide you with a list of available services, including examples such as Echo and SimpleService:
+```bash
+-s SVC, --service=SVC
+                    Name of the service to start. Known services:
+                    Schlockmeister, SampleConsumer, SampleProducer,
+                    SampleTxn, SampleTxnProducer, Echo, SimpleService
+```
+
+### Coming soon
+
+- An actual read me tutorial
+- Links to further tutorials
+- What everything means
+- How to write a recipe
+- How to write a service
+- How to write a wrapper
+- How to test that everything works in an isolated test environment
+- How to deploy this more widely
 
 ### Contributors
 

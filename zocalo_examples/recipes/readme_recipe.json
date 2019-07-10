@@ -1,0 +1,18 @@
+{
+    "1": {
+        "queue": "simpleservice.submission",
+        "parameters": {
+            "commands": [
+                "echo Congratulations! This is your first zocalo output!"
+            ],
+            "workingdir": "{working_dir}",
+            "output_file": "out.txt"
+        }
+    },
+    "start": [
+        [
+            1,
+            []
+        ]
+    ]
+}
