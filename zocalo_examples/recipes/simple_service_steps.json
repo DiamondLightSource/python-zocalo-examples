@@ -1,0 +1,53 @@
+{
+    "1": {
+        "queue": "simpleservice.submission",
+        "parameters": {
+            "commands": [
+                "echo This is the first stage"
+            ],
+            "workingdir": "/output/folder",
+            "output_file": "out.txt"
+        },
+        "output": 2
+    },
+    "2": {
+        "queue": "simpleservice.submission",
+        "parameters": {
+            "commands": [
+                "echo The second stage was triggered by the first stage"
+            ],
+            "workingdir": "/output/folder",
+            "output_file": "out.txt"
+        },
+        "output": [
+            3,
+            4
+        ]
+    },
+    "3": {
+        "queue": "simpleservice.submission",
+        "parameters": {
+            "commands": [
+                "echo The third stage is called by the second stage"
+            ],
+            "workingdir": "/output/folder",
+            "output_file": "out.txt"
+        }
+    },
+    "4": {
+        "queue": "simpleservice.submission",
+        "parameters": {
+            "commands": [
+                "echo The fourth stage is also called by the second stage"
+            ],
+            "workingdir": "/output/folder",
+            "output_file": "out.txt"
+        }
+    },
+    "start": [
+        [
+            1,
+            []
+        ]
+    ]
+}

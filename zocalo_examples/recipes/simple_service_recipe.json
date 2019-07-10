@@ -1,0 +1,20 @@
+{
+    "1": {
+        "queue": "simpleservice.submission",
+        "parameters": {
+            "commands": [
+                "echo This is a command",
+                "echo This is another command",
+                "echo This is a third command"
+            ],
+            "workingdir": "/output/folder",
+            "output_file": "out.txt"
+        }
+    },
+    "start": [
+        [
+            1,
+            []
+        ]
+    ]
+}

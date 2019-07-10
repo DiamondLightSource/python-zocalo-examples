@@ -1,0 +1,16 @@
+{
+    "1": {
+        "service": "echo",
+        "queue": "examples.queue",
+        "parameters": {
+            "recipewrapper": "/output/folder.recipewrap",
+            "workingdir": "/output/folder"
+        }
+    },
+    "start": [
+        [
+            1,
+            []
+        ]
+    ]
+}

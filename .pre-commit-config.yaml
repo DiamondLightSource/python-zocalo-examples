@@ -1,0 +1,39 @@
+repos:
+
+# Automatic source code formatting
+- repo: https://github.com/ambv/black
+  rev: stable
+  hooks:
+  - id: black
+    args: [--safe, --quiet]
+
+# Syntax check and some basic flake8
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v2.0.0
+  hooks:
+  - id: check-ast
+  - id: flake8
+    args: ['--max-line-length=88', '--select=W291,W292,W293,F401']
+  - id: check-merge-conflict
+  - id: check-added-large-files
+    args: ['--maxkb=200']
+
+# Validate json recipe
+- repo: local
+  hooks:
+  - name: Recipe validation
+    id: recipe-validation
+    language: python
+    files: ^zocalo_examples/recipes/
+    types: [json]
+    entry: workflows.validate_recipe
+# Ensure recipes have generic working directories
+- repo: local
+  hooks:
+  - name: Example recipe checks
+    id: recipe-set-working-dir
+    language: python
+    args: ["/output/folder", --recipes]
+    files: ^zocalo_examples/recipes
+    types: [json]
+    entry: zocalo.examples.set_working_directory
