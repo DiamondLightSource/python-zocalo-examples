@@ -1,7 +1,7 @@
 # Zocalo Examples
 
 This repo stores a variety of Zocalo examples which can be used as the basis
- for learning about https://github.com/DiamondLightSource/python-zocalo[Zocalo](https://github.com/DiamondLightSource/python-zocalo)
+ for learning about [Zocalo](https://github.com/DiamondLightSource/python-zocalo)
   and developing:
 - recipes
 - services
