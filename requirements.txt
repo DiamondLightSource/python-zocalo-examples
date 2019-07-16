@@ -26,6 +26,6 @@ stomp.py==4.1.22
 toml==0.10.0
 virtualenv==16.6.1
 wcwidth==0.1.7
--e git+git@github.com:DiamondLightSource/python-workflows.git@670baa38f278d6cadafa0055dafc79a79b4901b2#egg=workflows
+workflows>=1.7
 zipp==0.5.1
 zocalo==0.6.1

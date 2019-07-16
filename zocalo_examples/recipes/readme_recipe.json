@@ -5,8 +5,8 @@
             "commands": [
                 "echo Congratulations! This is your first zocalo output!"
             ],
-            "workingdir": "{working_dir}",
-            "output_file": "out.txt"
+            "workingdir": "{workingdir}",
+            "output_file": "zocalo_out.txt"
         }
     },
     "start": [
