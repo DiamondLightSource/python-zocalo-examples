@@ -2,14 +2,14 @@ repos:
 
 # Automatic source code formatting
 - repo: https://github.com/ambv/black
-  rev: stable
+  rev: 19.3b0
   hooks:
   - id: black
     args: [--safe, --quiet]
 
 # Syntax check and some basic flake8
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v2.0.0
+  rev: v2.2.3
   hooks:
   - id: check-ast
   - id: flake8
@@ -19,14 +19,12 @@ repos:
     args: ['--maxkb=200']
 
 # Validate json recipe
-- repo: local
+- repo: https://github.com/DiamondLightSource/python-workflows
+  rev: v1.7
   hooks:
-  - name: Recipe validation
-    id: recipe-validation
-    language: python
+  - id: check-recipes
     files: ^zocalo_examples/recipes/
-    types: [json]
-    entry: workflows.validate_recipe
+
 # Ensure recipes have generic working directories
 - repo: local
   hooks:

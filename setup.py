@@ -13,7 +13,7 @@ setup(
     author="Tim Guite",
     author_email="tim.guite@diamond.ac.uk",
     packages=["zocalo_examples"],
-    install_requires=["zocalo", "nested_lookup"],
+    install_requires=["workflows>=1.7", "zocalo", "nested_lookup"],
     entry_points={
         "console_scripts": [
             "zocalo.examples.set_working_directory = zocalo_examples.recipes.set_working_directory:main"
