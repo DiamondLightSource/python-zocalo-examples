@@ -12,6 +12,8 @@ and developing:
 
 Zocalo Examples is a python 3 package developed by `Diamond Light Source <https://www.diamond.ac.uk/>`_.
 
+Full documentaion is available `here <https://python-zocalo-examples.readthedocs.io/en/latest/>`_.
+
 Installation
 ------------
 
