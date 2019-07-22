@@ -114,23 +114,26 @@ The SimpleService is now waiting for an input which we will provide next.
 Sending a Recipe
 ^^^^^^^^^^^^^^^^
 
-Recipes define the data processing pipeline for a particular job or set of data.
+**Recipes** define the data processing pipeline for a particular job or set of data.
 
 They can be very complex but let's use one that was prepared earlier!
 
 Recipes are sent with the *zocalo.go* command.
 As well as taking prepared recipes, it can be pointed to any valid recipe file.
-Here, use zocalo_examples/recipes/readme_recipe.json from the package itself.
+Here, use *readme_recipe.json* from the *python-zocalo-examples*.
 
-Open a new terminal, activate the virtual environment and send the recipe with a valid *workingdir*:
+Open a new terminal, activate the virtual environment,
+go to the example recipes directory and send the recipe with a valid *workingdir*:
 
 .. code-block:: bash
 
     source zocalo_venv/bin/activate
-    zocalo.go --test -f zocalo_examples/recipes/readme_recipe.json -s workingdir="/my/working/dir"
+    cd python-zocalo-examples/zocalo_examples/recipes
+    zocalo.go --test -f readme_recipe.json -s workingdir="/my/working/dir"
 
-Assuming you have provided a valid *workingdir*, SimpleService should let you know it ran,
-Dispatcher should be showing its message processing,
+Assuming you have correctly addressed the recipe file and provided a valid *workingdir*,
+SimpleService should let you know it ran,
+Dispatcher should show its message processing,
 and there should be a **zocalo_out.txt** in your *workingdir*:
 
 .. code-block:: bash
