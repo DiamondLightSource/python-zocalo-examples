@@ -27,11 +27,12 @@ Using python 3, go to the directory you are going to be developing in and type:
 
 **Note:** zocalo_venv is an example name for the venv, it is best to give useful names.
 
-Now install the package directly from Github:
+Clone the package from Github and install to the virtual environment:
 
 .. code-block:: bash
 
-    pip install -e git+git://github.com/DiamondLightSource/python-zocalo-examples.git#egg=python_zocalo_examples
+    git clone https://github.com/DiamondLightSource/python-zocalo-examples.git
+    pip install -e python-zocalo-examples
 
 Running the *pip list* command should now show your installed packages, including zocalo_examples.
 
