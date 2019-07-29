@@ -1,0 +1,49 @@
+{
+    "1": {
+        "queue": "wrapperservice.submission",
+        "parameters": {
+            "commands": [
+                "echo Making a recipe wrapper file",
+                "zocalo.wrap --test --wrap SimpleWrapper --recipewrapper $RECIPEWRAP"
+            ],
+            "recipewrapper": "/output/folder/.recipewrap",
+            "workingdir": "/output/folder",
+            "output_file": "wrapper_out.txt"
+        },
+        "job_parameters": {
+            "working_directory": "/output/folder/zocalo_wrapper",
+            "results_directory": "/output/folder/zocalo_wrapper",
+            "dcid": "{ispyb_dcid}",
+            "test key": "test value"
+        },
+        "output": [
+            2
+        ]
+    },
+    "2": {
+        "queue": "wrapperservice.submission",
+        "parameters": {
+            "commands": [
+                "echo Making a recipe wrapper file",
+                "zocalo.wrap --test --wrap SimpleWrapper --recipewrapper $RECIPEWRAP"
+            ],
+            "recipewrapper": "/output/folder/.recipewrap",
+            "workingdir": "/output/folder",
+            "output_file": "wrapper_out.txt"
+        },
+        "job_parameters": {
+            "working_directory": "/output/folder/zocalo_wrapper2",
+            "results_directory": "/output/folder/zocalo_wrapper2",
+            "dcid": "{ispyb_dcid}",
+            "test key": "test value"
+        }
+    },
+    "start": [
+        [
+            1,
+            {
+                "parameter 1": "This is a string parameter"
+            }
+        ]
+    ]
+}
