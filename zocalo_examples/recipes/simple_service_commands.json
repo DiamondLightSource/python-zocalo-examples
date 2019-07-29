@@ -3,7 +3,9 @@
         "queue": "simpleservice.submission",
         "parameters": {
             "commands": [
-                "echo This is a command"
+                "echo This is a command",
+                "echo This is a second command",
+                "echo This is a third command"
             ],
             "workingdir": "/output/folder",
             "output_file": "out.txt"
