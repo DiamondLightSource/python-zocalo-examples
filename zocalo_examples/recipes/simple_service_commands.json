@@ -3,9 +3,12 @@
         "queue": "simpleservice.submission",
         "parameters": {
             "commands": [
+                "date",
                 "echo This is a command",
-                "echo This is a second command",
-                "echo This is a third command"
+                "echo This is another command",
+                "echo This is a third command",
+                "echo input: {input}",
+                "echo DCID: {ispyb_dcid}"
             ],
             "workingdir": "/output/folder",
             "output_file": "out.txt"
