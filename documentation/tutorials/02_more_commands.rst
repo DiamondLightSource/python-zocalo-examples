@@ -135,7 +135,7 @@ The final recipe as specified here looks like this:
                     "echo input: {input}",
                     "echo DCID: {ispyb_dcid}"
                 ],
-                "workingdir": "/dls/tmp/riw56156",
+                "workingdir": "/output/folder",
                 "output_file": "out.txt"
             }
         },
