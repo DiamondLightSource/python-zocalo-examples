@@ -12,6 +12,7 @@
 
    explanations
    tutorials
+   custom_service_wrapper
 
 
 Indices and tables

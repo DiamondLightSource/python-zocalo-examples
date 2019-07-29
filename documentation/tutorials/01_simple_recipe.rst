@@ -1,6 +1,5 @@
-=============
 Simple Recipe
-=============
+-------------
 
 This tutorial will explain the structure and content of a simple recipe.
 
