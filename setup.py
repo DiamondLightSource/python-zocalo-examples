@@ -21,6 +21,10 @@ setup(
         "workflows.services": [
             "Echo = zocalo_examples.services.echo_service:EchoService",
             "SimpleService = zocalo_examples.services.simple_service:SimpleService",
+            "WrapperService = zocalo_examples.services.wrapper_service:WrapperService",
+        ],
+        "zocalo.wrappers": [
+            "SimpleWrapper = zocalo_examples.wrappers.simple_wrapper:SimpleWrapper"
         ],
     },  # this makes a script
     #    include_package_data = True, # use this to include non python files
