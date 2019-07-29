@@ -10,6 +10,9 @@
    :caption: Contents:
    :hidden:
 
+   explanations
+   tutorials
+
 
 Indices and tables
 ==================
