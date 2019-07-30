@@ -47,7 +47,7 @@ your messages!
 Production Recipes
 ------------------
 
-Our recipes for use in production are stored on our **internal Gitlab** server called *zocalo-configuration*.
+Our recipes for use in production are stored in a repo on our **internal Gitlab** server called *zocalo-configuration*.
 
 The recipes are cloned from here to a production location which is read only to almost all users.
 

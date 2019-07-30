@@ -1,5 +1,5 @@
-2: More commands and paramaters
-----------------------------
+2: More Commands and Parameters
+-------------------------------
 
 This tutorial will be realtively brief as it builds directly on top of the previous tutorial.
 
