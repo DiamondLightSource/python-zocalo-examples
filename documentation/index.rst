@@ -13,6 +13,7 @@
    explanations
    tutorials
    custom_service_wrapper
+   at_diamond
 
 
 Indices and tables
