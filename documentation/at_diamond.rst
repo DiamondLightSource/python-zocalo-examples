@@ -43,3 +43,13 @@ To run up a service in this test space, simply use the "--test" option:
 This will isolate your development work both from the live environment and also from other Zocalo developers who
 may be working on the same services/queues as you and could be accidentally crashing your services or consuming
 your messages!
+
+Production Recipes
+------------------
+
+Our recipes for use in production are stored on our **internal Gitlab** server called *zocalo-configuration*.
+
+The recipes are cloned from here to a production location which is read only to almost all users.
+
+If you wish to use a recipe in production, for the repo or start a new branch and issue a pull request.
+This will enable Zocalo developers to approve the recipe before it is deployed.
