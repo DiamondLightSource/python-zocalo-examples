@@ -1,0 +1,10 @@
+name: zocalo
+channels:
+  - conda-forge
+dependencies:
+  - python==3.9
+  - zocalo
+  - nested-lookup
+  - build
+
+

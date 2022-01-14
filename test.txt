@@ -1,0 +1,22 @@
+
+Using own conda installation, create a zocalo environment to install zocalo and
+build python-zocalo-examples
+
+$ conda env create -f zocalo-env.yaml
+$ conda activate zocalo
+
+# Build and install wheel
+$ python -m build -w
+$ pip install dist/zocalo_examples-0.0-py3-none-any.whl
+
+# Start activemq in another shell which gives a per-day test instance
+# in ACTIVEMQ_CONF=/dls/tmp/$USER/zocdev-activemq/$(date +%Y-%m-%d)
+$ module load activemq/zocdev
+
+# Back in first shell, see what services and enviroments are available
+export ZOCALO_CONFIG=/dls_sw/apps/zocalo/live/configuration.yaml
+$ zocalo.service --help
+# Start dispatcher
+$ zocalo.service -e test -s Dispatcher -v
+
+

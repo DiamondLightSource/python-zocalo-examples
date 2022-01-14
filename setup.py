@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # these lines allow the version to be specified in Makefile.private
 import os
@@ -12,7 +12,7 @@ setup(
     description="Module",
     author="Tim Guite",
     author_email="tim.guite@diamond.ac.uk",
-    packages=["zocalo_examples"],
+    packages=find_packages(),
     install_requires=["workflows>=1.7", "zocalo", "nested_lookup"],
     entry_points={
         "console_scripts": [
@@ -20,6 +20,7 @@ setup(
         ],
         "workflows.services": [
             "Echo = zocalo_examples.services.echo_service:EchoService",
+            "Dispatcher = zocalo_examples.services.generic_dispatcher:Dispatcher",
             "SimpleService = zocalo_examples.services.simple_service:SimpleService",
             "WrapperService = zocalo_examples.services.wrapper_service:WrapperService",
         ],
