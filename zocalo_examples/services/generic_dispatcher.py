@@ -73,13 +73,6 @@ class Dispatcher(CommonService):
         message["recipe"].apply_parameters(parameters)
         return message, parameters
 
-    # Put message filter functions in here and they will be run in order during filtering
-    _message_filters = [
-        filter_parse_recipe_object,
-        filter_load_recipes_from_files,
-        filter_apply_parameters,
-    ]
-
     def hook_before_filtering(self, header, message, recipe_id):
         """Actions to be taken before message filtering"""
         pass
@@ -96,6 +89,12 @@ class Dispatcher(CommonService):
         self._transport.subscribe(
             "processing_recipe", self.process, acknowledgement=True
         )
+        # Put message filter functions in here and they will be run in order during filtering
+        self._message_filters = [
+            self.filter_parse_recipe_object,
+            self.filter_load_recipes_from_files,
+            self.filter_apply_parameters,
+        ]
 
     def process(self, header, message):
         """Process an incoming processing request."""
